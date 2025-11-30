@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_dp">8dp</dimen>
+    <dimen name="title_sp">48sp</dimen>
+    <dimen name="large_dp">48dp</dimen>
+    <dimen name="medium_dp">24dp</dimen>
+    <dimen name="semi_medium">16dp</dimen>
+</resources>
