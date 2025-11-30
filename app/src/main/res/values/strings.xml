@@ -3,4 +3,5 @@
     <string name="app_names">Core Notes</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_new_note">Add a new note</string>
 </resources>
