@@ -21,7 +21,12 @@
         android:id="@+id/addNoteFragment"
         android:name="com.omersenturk.corenotes.presentation.home.AddNoteFragment"
         android:label="fragment_add_note"
-        tools:layout="@layout/fragment_add_note" />
+        tools:layout="@layout/fragment_add_note">
+        <argument
+            android:name="noteId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
     <fragment
         android:id="@+id/detailsFragment"
         android:name="com.omersenturk.corenotes.presentation.details.DetailsFragment"
