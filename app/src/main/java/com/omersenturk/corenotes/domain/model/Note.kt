@@ -1,4 +1,7 @@
 package com.omersenturk.corenotes.domain.model
 
-class Note {
-}
+data class Note(
+    val id: Int? = null,
+    val title: String,
+    val content: String,
+)
