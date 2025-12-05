@@ -58,7 +58,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     // Room Database
-    val room_version = "2.6.1"
+    val room_version = "2.7.0"
     implementation("androidx.room:room-ktx:$room_version")
     implementation("androidx.room:room-runtime:$room_version")
     kapt("androidx.room:room-compiler:$room_version")
@@ -74,7 +74,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
 
     // Hilt
-    val hilt_version = "2.51.1"
+    val hilt_version = "2.53.1"
     implementation("com.google.dagger:hilt-android:$hilt_version")
     kapt("com.google.dagger:hilt-compiler:$hilt_version")
     implementation("androidx.hilt:hilt-navigation-fragment:1.2.0")
