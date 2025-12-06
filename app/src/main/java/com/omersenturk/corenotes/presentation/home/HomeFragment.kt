@@ -50,7 +50,7 @@ class HomeFragment : Fragment() {
             onNoteClick = ::handleNoteClick,
             onDeleteSwipe = { note ->
                 viewModel.onEvent(HomeEvent.DeleteNote(note))
-                Snackbar.make(binding.root, "Not başarıyla silindi.", Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(binding.root, "Not silindi.", Snackbar.LENGTH_SHORT).show()
             }
         )
         binding.recycleViewNote.adapter = noteAdapter

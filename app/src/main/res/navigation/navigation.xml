@@ -13,13 +13,10 @@
         <action
             android:id="@+id/action_homeFragment_to_addNoteFragment"
             app:destination="@id/addNoteFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/addNoteFragment"
-        android:name="com.omersenturk.corenotes.presentation.home.AddNoteFragment"
+        android:name="com.omersenturk.corenotes.presentation.home.addeditnote.AddEditNoteFragment"
         android:label="fragment_add_note"
         tools:layout="@layout/fragment_add_note">
         <argument
@@ -27,9 +24,4 @@
             app:argType="integer"
             android:defaultValue="-1" />
     </fragment>
-    <fragment
-        android:id="@+id/detailsFragment"
-        android:name="com.omersenturk.corenotes.presentation.details.DetailsFragment"
-        android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
 </navigation>

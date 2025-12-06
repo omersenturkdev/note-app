@@ -32,7 +32,6 @@ class HomeViewModel @Inject constructor(
         when (event) {
             is HomeEvent.DeleteNote -> {
                 viewModelScope.launch {
-
                     noteUseCases.deleteNotes(event.note)
                 }
             }

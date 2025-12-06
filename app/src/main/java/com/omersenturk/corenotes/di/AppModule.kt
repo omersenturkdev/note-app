@@ -6,7 +6,7 @@ import com.omersenturk.corenotes.data.local.NoteDao
 import com.omersenturk.corenotes.data.local.NoteDatabase
 import com.omersenturk.corenotes.data.repository.NoteRepositoryImpl
 import com.omersenturk.corenotes.domain.repository.NoteRepository
-import com.omersenturk.corenotes.domain.usecase.DeleteNotes
+import com.omersenturk.corenotes.domain.usecase.DeleteNote
 import com.omersenturk.corenotes.domain.usecase.GetNote
 import com.omersenturk.corenotes.domain.usecase.GetNotes
 import com.omersenturk.corenotes.domain.usecase.InsertNotes
@@ -52,7 +52,7 @@ object AppModule {
             getNotes = GetNotes(repository),
             getNote = GetNote(repository),
             insertNotes = InsertNotes(repository),
-            deleteNotes = DeleteNotes(repository)
+            deleteNotes = DeleteNote(repository)
         )
     }
 }
