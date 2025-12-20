@@ -39,7 +39,6 @@ class AddEditNoteFragment : Fragment() {
     }
 
     private fun setupListeners() {
-        // MANTIK PROBLEMİ OLABİLİR: Sadece SaveNote event'i gönderilmeliydi.
         binding.fabSaveNote.setOnClickListener {
             viewModel.onEvent(AddEditNoteEvent.EnteredTitle(binding.editTextNoteTitle.text?.toString().orEmpty()))
             viewModel.onEvent(AddEditNoteEvent.EnteredContent(binding.editTextNoteContent.text?.toString().orEmpty()))
