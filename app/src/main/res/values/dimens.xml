@@ -5,4 +5,5 @@
     <dimen name="large_dp">48dp</dimen>
     <dimen name="medium_dp">24dp</dimen>
     <dimen name="semi_medium">16dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
 </resources>
