@@ -69,11 +69,8 @@ class AddEditNoteViewModel @Inject constructor(
 
     private fun saveNote() {
         viewModelScope.launch {
-            // Trimlenmiş versiyonları sadece doğrulama (validation) için kullanıyoruz.
             val trimmedTitle = state.value.noteTitle.trim()
             val trimmedContent = state.value.noteContent.trim()
-
-            // Eğer başlık ve trimlenmiş içerik tamamen boşsa kaydetmeyi engelle.
             if (trimmedTitle.isBlank() && trimmedContent.isBlank()) {
                 _state.value = state.value.copy(
                     error = "Başlık veya içerik boş olamaz."
@@ -81,20 +78,17 @@ class AddEditNoteViewModel @Inject constructor(
                 return@launch
             }
 
-            // İçeriği kaydederken: Eğer trimlenmiş içerik boşsa (kullanıcı hiç bir şey yazmamışsa),
-            // varsayılan mesajı kullan. Aksi takdirde, kullanıcının girdiği ORİJİNAL (kesilmemiş)
-            // içeriği kaydet (Böylece boşluk ve formatlama korunur).
             val contentToSave = if (trimmedContent.isBlank()) {
                 "İçerik yok"
             } else {
-                state.value.noteContent // Orijinal (Untrimmed) içeriği kaydet
+                state.value.noteContent
             }
 
             try {
                 val noteToSave = Note(
                     id = state.value.noteId,
                     title = trimmedTitle.ifBlank { "Başlıksız Not" },
-                    content = contentToSave, // Artık orijinal içeriği kullanıyoruz
+                    content = contentToSave,
                 )
                 noteUseCases.insertNotes(noteToSave)
 
