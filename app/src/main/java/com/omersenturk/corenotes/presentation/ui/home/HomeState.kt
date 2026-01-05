@@ -1,4 +1,4 @@
-package com.omersenturk.corenotes.presentation.home
+package com.omersenturk.corenotes.presentation.ui.home
 
 import com.omersenturk.corenotes.domain.model.Note
 

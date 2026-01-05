@@ -1,4 +1,4 @@
-package com.omersenturk.corenotes.presentation.home
+package com.omersenturk.corenotes.presentation.ui.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

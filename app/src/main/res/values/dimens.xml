@@ -6,4 +6,5 @@
     <dimen name="medium_dp">24dp</dimen>
     <dimen name="semi_medium">16dp</dimen>
     <dimen name="_4dp">4dp</dimen>
+    <dimen name="_18sp">18sp</dimen>
 </resources>

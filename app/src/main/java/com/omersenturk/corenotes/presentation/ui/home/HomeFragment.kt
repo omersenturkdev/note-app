@@ -1,4 +1,4 @@
-package com.omersenturk.corenotes.presentation.home
+package com.omersenturk.corenotes.presentation.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import com.omersenturk.corenotes.databinding.FragmentHomeBinding
 import com.omersenturk.corenotes.domain.model.Note
+import com.omersenturk.corenotes.presentation.ui.NoteAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch

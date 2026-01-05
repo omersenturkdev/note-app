@@ -1,4 +1,4 @@
-package com.omersenturk.corenotes.presentation.home
+package com.omersenturk.corenotes.presentation.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

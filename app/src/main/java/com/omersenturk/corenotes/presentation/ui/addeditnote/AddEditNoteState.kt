@@ -1,4 +1,4 @@
-package com.omersenturk.corenotes.presentation.home.addeditnote
+package com.omersenturk.corenotes.presentation.ui.addeditnote
 
 data class AddEditNoteState(
     val noteTitle: String = "",

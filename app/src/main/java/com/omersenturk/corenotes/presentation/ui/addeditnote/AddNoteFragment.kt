@@ -1,4 +1,4 @@
-package com.omersenturk.corenotes.presentation.home.addeditnote
+package com.omersenturk.corenotes.presentation.ui.addeditnote
 
 import android.os.Bundle
 import android.view.LayoutInflater
