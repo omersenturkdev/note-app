@@ -7,4 +7,6 @@
     <string name="title">Title</string>
     <string name="enter_text_here">Enter text here..</string>
     <string name="save_note">Save Note</string>
+    <string name="shopping_list">Alışveriş Listesi</string>
+    <string name="sample_text">Ekmek,Süt,Yulaf,Yabam mersini vs</string>
 </resources>
