@@ -1,61 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/CardViewNote"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="72dp"
+    android:layout_margin="@dimen/small_dp"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="@dimen/small_dp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/CardViewNote"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:layout_marginStart="@dimen/small_dp"
-        android:layout_marginTop="@dimen/_4dp"
-        android:layout_marginBottom="@dimen/small_dp"
-        android:layout_marginEnd="@dimen/small_dp"
-        android:backgroundTint="@color/white"
-        app:cardCornerRadius="@dimen/small_dp">
+        android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewNoteTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/small_dp"
+            android:paddingTop="@dimen/small_dp"
+            android:paddingEnd="@dimen/small_dp"
+            android:textColor="@color/card_title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/architects_daughter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="Dene" />
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/textViewNoteTitle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:paddingStart="@dimen/small_dp"
-                android:paddingTop="@dimen/small_dp"
-                android:paddingEnd="@dimen/small_dp"
-                android:textColor="@color/card_title"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:fontFamily="@font/architects_daughter"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tool:text="Dene" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewNoteDescription"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="@dimen/small_dp"
+            android:paddingEnd="@dimen/small_dp"
+            android:textColor="@color/card_description"
+            android:textSize="16sp"
+            app:fontFamily="@font/architects_daughter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNoteTitle"
+            tool:text="Açıklama metni buraya gelecek..." />
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/textViewNoteDescription"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:paddingStart="@dimen/small_dp"
-                android:paddingTop="4dp"
-                android:paddingEnd="@dimen/small_dp"
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                android:textColor="@color/card_description"
-                android:textSize="16sp"
-                app:fontFamily="@font/architects_daughter"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewNoteTitle"
-                tool:text="DsidlşasajskldklaşsdkaskşldaslşkdasşdjklaskdjşasşkldlşkasdkjşlaskljdşklaşjsdklşjaskjlşdjkalsdjklşaskjlşdEMEM" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
-
-</LinearLayout>
+</androidx.cardview.widget.CardView>
